@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import "style/index.wxss";
+.wrap {
+     box-sizing: border-box;
+     background-color: #f0f4f5;
+     min-height: 100vh;
+ }
+.mini_line{
+    height: 3rpx;
+    background-color: #c85e0b;
+
+}
+.line{
+    height: 10rpx;
+    background-color: #c85e0b;
+
+}

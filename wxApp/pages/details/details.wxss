@@ -1,0 +1,257 @@
+/* pages/details/details.wxss */
+
+.line{
+    height: 10rpx;
+    background-color: #DCDCDC;
+}
+.head_img{
+    height: 350rpx;
+    background-color: #F08519;
+}
+.headImg{
+    height: 350rpx;
+    width: 100%;
+}
+.head_name{
+    display: flex;
+    /*background-color: #cc0000;*/
+    padding: 15rpx;
+    padding-left: 20rpx;
+    align-items: flex-start; /*定义body的元素垂直居中*/
+    justify-content: left; /*定义body的里的元素水平居中*/
+}
+
+.headName{
+    /*background-color: #0000FF;*/
+    padding-right: 20rpx;
+    font-size: 1.2rem;
+}
+.head{
+    /*height: auto;*/
+
+}
+
+.headNameType{
+    font-size: 0.8rem;
+    padding: 16rpx;
+    color: #c85e0b;
+    /*background-color: #660066;*/
+}
+.head_add{
+    /*background-color: #F08519;*/
+    font-size: 0.8rem;
+    display: flex;
+    padding: 15rpx;
+    padding-left: 20rpx;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: right; /*定义body的里的元素水平居中*/
+}
+.headAddMap{
+     /*background-color: #660066;*/
+     color: #46b8da;
+     font-size: 0.8rem;
+     position: absolute;
+     right: 15rpx;
+     /*margin: 0rpx auto;*/
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+
+ }
+
+.head_phone{
+    /*background-color: #F08519;*/
+    font-size: 0.8rem;
+    display: flex;
+    padding: 15rpx;
+    padding-left: 20rpx;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: right; /*定义body的里的元素水平居中*/
+}
+.headPhone{
+    margin-left: 15rpx;
+    color: #46b8da;
+    font-size: 0.8rem;
+    /*position: absolute;*/
+    /*right: 15rpx;*/
+
+
+}
+
+
+.body_text{
+    margin: 20rpx;
+    font-size: 0.8rem;
+    color: #cc0000;
+}
+.mini_line{
+    height: 3rpx;
+    background-color: #DCDCDC;
+
+}
+.body{
+    /*background-color: #660066;*/
+    margin: 15rpx;
+    display: flex;
+    border-bottom: #080808;
+}
+.body_img{
+    display: flex;
+    height: 150rpx;
+    width: 150rpx;
+    /*background-color:#c85e0b;*/
+    border-radius: 20rpx;
+
+}
+.productImg{
+    display: flex;
+    height: 150rpx;
+    width: 150rpx;
+    /*background-color:#c85e0b;*/
+    border-radius: 20rpx;
+}
+.body_product_text{
+    margin-top: 15rpx;
+    /*display: flex;*/
+    /*background-color: #cc0000;*/
+}
+.body_product_name{
+    font-size: 0.9rem;
+    margin-bottom: 15rpx;
+    /*background-color: #0000FF;*/
+}
+.body_product_type{
+    font-size: 0.8rem;
+
+
+}
+
+.body_product{
+
+    display: flex;
+    /*align-items: center; !*定义body的元素垂直居中*!*/
+    /*justify-content: center; !*定义body的里的元素水平居中*!*/
+    /*background-color: #c85e0b;*/
+    margin-left: 0.5rem;
+    /*text-align: right;*/
+}
+.body_product_price{
+    position:absolute;
+    /*top: 5rpx;*/
+    right:20rpx;
+    /*display: flex;*/
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: right; /*定义body的里的元素水平居中*/
+    /*background-color: #5bc0de;*/
+    /*float: right;*/
+    text-align: right;
+    margin-top: 10rpx;
+}
+.body_product_price_Y{
+    /*background-color: #7e8795;*/
+    /*display: flex;*/
+    font-size: 1rem;
+    color: #cc0000;
+    margin-top: 20rpx;
+    /*float: right;*/
+    /*position:absolute;*/
+    /*top: 50rpx;*/
+    /*right:50rpx;*/
+    /*margin: -30rpx;*/
+}
+
+.body_product_price_M{
+    /*display: flex;*/
+    font-size: 0.9rem;
+    color: #A8A8A8 ;
+
+    text-decoration: line-through;/*删除线*/
+    /*float: right;*/
+    margin-top: 0.35rem;
+}
+
+.policy {
+    /*height: auto;*/
+    margin: 15rpx;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    text-overflow: ellipsis;
+    overflow:hidden;
+
+}
+.policy_head{
+    margin-top: 15rpx;
+    margin-bottom: 30rpx;
+
+}
+.policy_body_content{
+    margin-top: 30rpx;
+
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    /*text-overflow: ellipsis;*/
+    /*overflow:hidden;*/
+}
+
+.policy_body_head{
+    font-size: 0.85rem;
+}
+.policy_body_content_text{
+    margin-top: 10rpx;
+    font-size: 0.8rem;
+}
+.btn1main{
+
+    justify-content:center;
+    align-items:center;
+    /*background-color: #cc0000;*/
+    width: 100%;
+    height: 60rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    /*width: 200rpx;*/
+    /*height: 60rpx;*/
+
+}
+.btn1View{
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 200rpx;
+    height: 60rpx;
+    background-color: #E6E6FA;
+    border-radius: 40rpx;
+}
+.btn1Text{
+    color:#1E90FF;
+    font-size: 0.65rem;
+}
+
+.policy_body{
+
+    margin: 15rpx;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.unellipsis{
+    height: 445rpx ;
+    margin: 15rpx;
+    opacity: 1 /*// 不透明*/
+}
+.ellipsis{
+    height: auto;
+    margin: 15rpx;
+    opacity: 1 /*// 透明度*/
+}
+
+
+
+
+

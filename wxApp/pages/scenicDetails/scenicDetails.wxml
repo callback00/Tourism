@@ -1,0 +1,36 @@
+
+<!--音频部分-->
+<view class="audioContainer">
+    <!--当前为暂停状态  -->
+    <view class="audioState" wx:if="{{isPlay==false}}" bindtap='play'>
+        <image class="audioBackImg"  src="{{imgSrc}}" />
+        <image class="audioBtnImg" src='../../images/icon/pause.png' />
+    </view>
+    <!--当前为播放状态  -->
+    <view class="audioState" wx:if="{{isPlay==true}}" bindtap='stop'>
+        <image class="audioBackImg" src="{{imgSrc}}" animation="{{animationData}}"/>
+        <image class="audioBtnImg" src='../../images/icon/play.png' />
+    </view>
+    <view class="swp">
+        <text class="tx1">{{title}}</text>
+        <view class="mov">
+            <slider class="sld" block-size="12" value="{{active}}" min="0" max="{{duration}}" step="0.01"> </slider>
+            <view class="time">
+                <text class="tx2">{{currentTime}}</text>
+                <text class="tx3">{{durationTime}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<!--图文部分-->
+<view class="actionArr" wx:for="{{actionArr}}" wx:for-item="item" wx:key="name" data-index="{{index}}" >
+    <image class="actionArrImg" src="{{imgSrc}}"/>
+    <text class="tx4">{{item.name}}</text>
+    <view class="mini_line"> </view>
+    <text class="tx5">{{item.content}}</text>
+    <view class="mini_line"> </view>
+    <view class="tx6">美图鉴赏</view>
+    <block wx:for="{{item.imgSrcArr}}" wx:for-item="item1" wx:for-index="idx" wx:key="*this">
+        <image class="BuImg" wx:if="!{{item1}}=null" src="{{item1}}" data-index="{{idx}}" />
+    </block>
+</view>

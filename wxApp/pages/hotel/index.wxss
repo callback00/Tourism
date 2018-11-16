@@ -1,0 +1,61 @@
+.hotel-content-warp {
+    padding-top: 0.5rem;
+}
+
+.hotel-content-warp text {
+    font-size: 17px;
+    color: black;
+    padding-left: 1rem;
+}
+
+.hotel-content {
+    /* padding: 0 0.85rem 0.5rem 0.85rem; */
+}
+
+.hotel-content-item {
+    margin: 0.2rem 0;
+    background-color: white;
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.hotel-content-item-image {
+    padding: 1px;
+    flex: 1
+}
+
+.hotel-content-item-image image {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0;
+}
+
+.hotel-content-item-info {
+    padding: 0 0.5rem;
+    flex: 2;
+}
+
+.hotel-content-item-name {
+    font-size: 16px;
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.hotel-content-item-base {
+    padding: 0.25rem 0 0.5rem 0;
+    color: #999999;
+}
+
+.hotel-content-item-time {
+    font-size: 15px;
+}
+
+.hotel-content-item-price {
+    font-size: 15px;
+}
+
+.hotel-content-item-price text {
+    padding: 0;
+    color: #FF6666;
+}

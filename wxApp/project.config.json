@@ -1,0 +1,101 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx00b8f12720ad60bb",
+	"projectname": "Tourism",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": 0,
+					"name": "custom",
+					"pathName": "pages/workAreaAudit/index",
+					"query": "scene=15177105742.1535440668475",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "mycard",
+					"pathName": "pages/myCard/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "work",
+					"pathName": "pages/workAreaAudit/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "scenicDetails",
+					"pathName": "pages/scenicDetails/scenicDetails",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "版本更新模拟",
+					"pathName": "pages/home/index",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "workAreaAudit",
+					"pathName": "pages/workAreaAudit/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "优惠",
+					"pathName": "pages/preferential/preferential"
+				}
+			]
+		}
+	}
+}

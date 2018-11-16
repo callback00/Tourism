@@ -1,0 +1,19 @@
+<!--pages/preferential/preferential.wxml-->
+<view wx:for="{{area}}"  wx:for-item="item" wx:key="key" data-index="{{index}}" bindtap="gotableinfo" >
+            <view class="mini_line"> </view>
+            <view class="body">
+                <view class="body_img">
+                    <image class="productImg" mode="aspectFill" src="{{item.ImgSrc}}"/>
+                </view>
+                <view class="body_product">
+                    <view class="body_product_text">
+                        <view class="body_product_name">{{item.Name}}</view>
+                        <view class="body_product_type">{{item.NameType}}</view>
+                    </view>
+                    <view class="body_product_price">{{item.Price}}
+                        <text class="price_text">{{item.priceType}}</text>
+                    </view>
+                </view>
+            </view>
+</view>
+

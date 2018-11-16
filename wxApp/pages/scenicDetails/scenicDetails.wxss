@@ -1,0 +1,107 @@
+/* pages/scenicDetails/scenicDetails.wxss */
+.audioContainer{
+    background-color: #c85e0b;
+    border-radius: 0.5rem;
+    margin:0 1rem ;
+    display: flex;
+}
+
+.mini_line{
+    margin-top: 2rem;
+}
+.audioState{
+    width:150rpx;
+    height:150rpx;
+    position:relative;
+    background-color: #660066;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.audioBackImg{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.audioBtnImg{
+    width:50rpx;
+    height:50rpx;
+    position:absolute;
+    left:50rpx;
+    top:50rpx;
+}
+
+.swp{
+
+    /*background-color: #7e8795;*/
+    width: 65%;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.swp text{
+    color: white;
+}
+
+
+.sld{
+    width: 100%;
+    margin: 0rem;
+}
+
+.time{
+
+}
+
+.mov{
+    margin-top: 0.5rem;
+}
+.tx1{
+    font-size: 0.9rem;
+
+}
+
+.time text{
+    font-size: 0.5rem;
+
+}
+
+.tx2{
+    float: left;
+}
+.tx3{
+    float: right;
+
+}
+.actionArr{
+    margin: 0.3rem;
+    margin-top: 2rem;
+}
+.actionArrImg{
+     height: 12rem;
+     width: 100%;
+     border-radius: 5px 5px 0px 0;
+ }
+.BuImg{
+    height: 13rem;
+    width: 100%;
+    border-radius: 10rpx 10rpx 10rpx 10rpx;
+}
+.actionArr text{
+    font-size: 0.9rem;
+}
+
+.tx4{
+    font-size: 1.1rem;
+}
+.tx6{
+    font-size: 1.1rem;
+    color: #c85e0b;
+    margin-bottom: 0.5rem;
+}
+
+.mini_line{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+

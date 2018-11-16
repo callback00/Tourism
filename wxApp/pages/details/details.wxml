@@ -1,0 +1,69 @@
+<!--pages/details/details.wxml-->
+
+<block wx:for="{{areaData}}"  wx:for-item="item" wx:key="key"  >
+    <view class="head"   >
+        <view class="head_img">
+            <image class="headImg" mode="aspectFill" src="{{item.ImgSrc}}"/>
+        </view>
+        <view class="head_name">
+            <view class="headName">{{item.Name}}</view>
+            <view class="headNameType">{{item.NameType}}</view>
+        </view>
+        <view class="head_add">
+            <view class="headAdd">{{item.Add}}</view>
+            <view class="headAddMap" bindtap="map">地图
+                <image style="height:30rpx;width:30rpx" src="../../images/icon/right01.png"/>
+            </view>
+        </view>
+        <view class="head_phone" bindtap="tel">
+            <view class="headPhoneText" >电话</view>
+            <view class="headPhone">{{item.Phone}}</view>
+        </view>
+
+
+        <view class="line"> </view>
+        <view class="body_text">定向优惠</view>
+
+        <view class="product" wx:for="{{item.product}}" wx:for-item="product" wx:key="this">
+            <view class="mini_line"> </view>
+            <view class="body">
+                <view class="body_img">
+                    <image class="productImg" mode="aspectFill" src="{{product.ImgSrc}}"/>
+                </view>
+                <view class="body_product">
+                    <view class="body_product_text">
+                        <view class="body_product_name">{{product.ProductName}}</view>
+                        <view class="body_product_type">{{product.ProductType}}</view>
+                    </view>
+                    <view class="body_product_price">
+                        <view class="body_product_price_Y">{{product.ProductPrice}}</view>
+                        <view class="body_product_price_M">{{product.MProductPrice>0?'门市价：￥'+product.MProductPrice:''}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="line"> </view>
+        <view class="policy   {{ellipsis?'unellipsis':'ellipsis'}}" >
+            <view class="policy_head ">政策</view>
+            <view class="mini_line"> </view>
+            <view class="policy_body" style="margin-bottom:{{marginBottom}}rpx">
+                    <view class="policy_body_content" wx:for="{{item.policy}}" wx:for-item="policy" wx:key="this" >
+                        <view class="policy_body_head">{{policy.BodyHead}}</view>
+                        <view class="policy_body_content_text">{{policy.BodyContent}}</view>
+                    </view>
+            </view>
+
+        </view>
+        <view  class="btn1main" style="display:{{display}};">
+            <view class="btn1View" bindtap='ellipsis'>
+                <text class="btn1Text">{{ellipsis?'查看更多':'收起'}}</text>
+                <image style=" width: 35rpx;height: 35rpx;" src="{{ellipsis?'../../images/icon/unfold.png':'../../images/icon/fold.png'}}"/>
+            </view>
+        </view>
+    </view>
+
+</block>
+
+
+
+

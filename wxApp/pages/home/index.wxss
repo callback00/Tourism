@@ -1,0 +1,153 @@
+.home-swiper {
+    height: 13rem;
+    width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.login-btn {
+    width: 45%;
+    height: 35px;
+    font-size: 15px;
+    color: #0099FF !important;
+    border-color: #66CCFF !important;
+    border-radius: 25px;
+    line-height: 35px;
+
+}
+
+.home-content-warp {
+    padding-top: 0.5rem;
+}
+
+.home-content-warp text {
+    font-size: 1rem;
+    color: #c85e0b;
+    padding-left: 0.5rem;
+}
+
+.home-content {
+    padding: 0 0.2rem 0.5rem 0.2rem;
+}
+
+.home-content-item {
+    margin: 0.5rem 0;
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+}
+
+.home-content-item-image {
+    /*padding: 1px;*/
+    /*height: 350rpx;*/
+}
+
+.home-content-item-image image {
+    height: 12rem;
+    width: 100%;
+    border-radius: 5px 5px 0px 0;
+}
+
+.home-content-item-info {
+    padding: 0 0.5rem;
+}
+
+.home-content-item-name {
+    font-size: 1rem;
+    padding: 0.25rem 0 0.25rem 0;
+    /*background-color: #660066;*/
+    /*display: flex;*/
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+}
+
+.home-content-item-name text{
+    font-size: 0.7rem;
+    color: #cc0000;
+}
+
+.home-content-item-base-0{
+    display: flex;
+    /*padding: 0.25rem 0 0.5rem 0;*/
+    /*color: #00BFFF;*/
+}
+
+.home-content-item-base {
+    display: flex;
+    padding: 0.25rem 0 0.5rem 0;
+    color: #00BFFF;
+}
+
+.home-content-item-time {
+    font-size: 15px;
+    flex: 3;
+}
+.home-content-item-Map{
+    /*background-color: #660066;*/
+    color: #00BFFF;
+    font-size: 0.9rem;
+    position: absolute;
+    right: 30rpx;
+    /*margin: 0rpx auto;*/
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+
+}
+
+.home-content-item-price {
+    font-size: 0.9rem;
+    flex: 2;
+    text-align: right;
+    padding: 0.25rem 0 0.25rem 0;
+    /*background-color: #c85e0b;*/
+    /*display: flex;*/
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+
+}
+
+.home-content-item-price-mp text {
+    padding: 0;
+    font-size: 0.9rem;
+    color: #A8A8A8;
+    text-decoration: line-through;/*删除线*/
+
+}
+
+
+
+.home-content-item-price-yh text{
+    padding: 0;
+    font-size: 1.1rem;
+    color: #cc0000;
+
+
+}
+
+
+
+.beiZu{
+    font-size: 0.7rem;
+    color: #c85e0b;
+}
+
+.swiperContainer{
+    margin-top: 0.6rem;
+    position: relative;
+    left: 5rpx;
+    right: 5rpx;
+    width: 100%;
+    height: auto;
+    /*height: 20%;*/
+    /*background: red;*/
+}
+
+.slide-image{
+    width: 100%;
+    height: auto;
+}
+

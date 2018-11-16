@@ -1,0 +1,72 @@
+<!-- index.wxml -->
+<txv-video  class="video" vid="e0710uys5if" playerid="txv1" autoplay="{{true}}">
+</txv-video>
+<view class="wrap">
+    <!--<view class="home-header">-->
+        <!--<swiper class="home-swiper" indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{1000}}">-->
+            <!--<block wx:for="{{imgUrls}}" wx:key="*this">-->
+                <!--<swiper-item>-->
+                    <!--<image src="{{item}}" class="slide-image" />-->
+                <!--</swiper-item>-->
+            <!--</block>-->
+        <!--</swiper>-->
+    <!--</view>-->
+    <view class="home-middle" style="padding-top:10px">
+        <button wx:if="{{loginBtnShow}}" class="login-btn" type="default" plain="{{true}}" bindtap="loginHandle">
+            点我注册
+        </button>
+    </view>
+    <!--图片轮播 -->
+    <view class="swiperContainer">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}" interval="{{interval}}" duration="{{duration}}" vertical='{{vertical}}' circular='{{circular}}'>
+            <block wx:for="{{swiperImg}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" mode="widthFix" bindload='imgHeight'/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="home-content-warp">
+        <text style="pading-left:2rpx">景区简介</text>
+        <view class="mini_line"> </view>
+        <view class="home-content">
+            <view class="home-content-item" wx:for="{{scenicData}}" wx:key="*this"  wx:for-item="item" data-index="{{index}}" bindtap="toScenic">
+                <view class="home-content-item-image">
+                    <image src="{{item.img}}" />
+                </view>
+                <view class="home-content-item-info">
+                    <view class="home-content-item-base-0">
+                        <view class="home-content-item-name">{{item.name}}
+                            <text >等级:{{item.level}} </text>
+                        </view>
+                        <view class="home-content-item-price">
+                            <view class="home-content-item-price-yh">
+
+                                {{item.name=='圣堂湖景区'?'游湖观光价：':item.priceYh > 0 && item.priceYh!=item.price ? '门票优惠价：':''}}
+                                <text>{{item.priceYh > 0 && item.priceYh!=item.price ? '¥'+item.priceYh:''}}</text>
+                            </view>
+                            <view class="home-content-item-price-mp">
+                                {{item.price > 0 && item.priceYh==item.price? '门票:':''}}
+                                <text>{{item.price > 0  && item.priceYh!=item.price ? '原价：¥'+item.price:''}}</text>
+                                {{item.price > 0  && item.priceYh==item.price ? '¥'+item.price:''}}
+                                <!--{{item.price > 0 ? '':'免费'}}-->
+                            </view>
+
+                            <view class="beiZu">{{item.name=='圣堂湖景区'?'含国家法定节假日':item.price > 0  && item.priceYh!=item.price ? '国家法定节假日除外':''}}</view>
+                        </view>
+
+
+                    </view>
+                    <view class="home-content-item-base">
+                        <view class="home-content-item-time">营业时间时间：{{item.openTime}}</view>
+                        <view class="home-content-item-Map" data-index="{{index}}" bindtap="map" >地图
+                            <image style="height:30rpx;width:30rpx" src="../../images/icon/right01.png"/>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

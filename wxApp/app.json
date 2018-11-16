@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/hotel/index",
+    "pages/login/index",
+    "pages/myCard/index",
+    "pages/workAreaAudit/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/preferential/preferential",
+    "pages/details/details",
+    "pages/scenicDetails/scenicDetails"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "茂名人游金秀",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./images/icon/homepage.png",
+        "selectedIconPath": "./images/icon/homepage_fill.png"
+      },
+      {
+        "pagePath": "pages/preferential/preferential",
+        "text": "优惠",
+        "iconPath": "./images/icon/headlines.png",
+        "selectedIconPath": "./images/icon/headlines_fill.png"
+      },
+      {
+        "pagePath": "pages/myCard/index",
+        "text": "我的",
+        "iconPath": "./images/icon/mine.png",
+        "selectedIconPath": "./images/icon/mine_fill.png"
+      }
+    ]
+  },
+  "plugins": {
+    "tencentvideo": {
+
+      "version": "1.2.2",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}

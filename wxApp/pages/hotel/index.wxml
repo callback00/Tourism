@@ -1,0 +1,23 @@
+<!-- index.wxml -->
+<view class="wrap">
+    <view class="hotel-content-warp">
+        <text>酒店信息</text>
+        <view class="hotel-content">
+            <view class="hotel-content-item" bindtap="detailHandle"  data-id="{{item.id}}" wx:for="{{hotelData}}" wx:key="*this" wx:for-index="index" wx:for-item="item">
+                <view class="hotel-content-item-image">
+                    <image src="{{item.img}}" />
+                </view>
+                <view class="hotel-content-item-info">
+                    <view class="hotel-content-item-name">{{item.name}}</view>
+                    <view class="hotel-content-item-base">
+                        <view class="hotel-content-item-time">营业时间时间：{{item.openTime}}</view>
+                        <view class="hotel-content-item-price">
+                            最低优惠价：
+                            <text>{{item.price > 0 ? '¥'+item.price:item.price}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
