@@ -60,7 +60,7 @@
     "lodash.trim": "^4.5.1",
     "lodash.unset": "^4.5.2",
     "md5": "^2.2.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^2.1.6",
     "precss": "^3.1.2",
     "react": "^16.4.1",
