@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@alicloud/sms-sdk": "^1.1.2",
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "body-parser": "^1.18.3",
     "bufferhelper": "^0.2.1",
     "compression": "^1.7.3",
